@@ -1,0 +1,43 @@
+.custom-posts-list {
+    list-style: none;
+    padding: 0;
+}
+
+.custom-posts-list li {
+    margin-bottom: 10px;
+}
+
+.post-title {
+    font-weight: bold;
+}
+
+.post-date,
+.post-rating {
+    display: block;
+}
+
+.rating-panel {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    z-index: 1000;
+}
+
+.rating-panel[data-position="bottom-center"] {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.rating-panel[data-position="bottom-right"] {
+    left: auto;
+    right: 10px;
+}
+
+.rating-panel .star {
+    cursor: pointer;
+    font-size: 20px;
+    color: #ff0;
+}
