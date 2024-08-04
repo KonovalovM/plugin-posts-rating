@@ -41,3 +41,18 @@
     font-size: 20px;
     color: #ff0;
 }
+
+@media (max-width: 600px) {
+    .post-title {
+        display: block;
+        max-width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .post-meta {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
